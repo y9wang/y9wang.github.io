@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="list">
+            </div>
+    <script>
+    var words = ["Easter","about","action","after","ago","all","also","always","animal","another","any","area","as","ask","away","babies","baby","back","bake","ball","band","be","because","beg","began","begin","belly","best","birthday","bite","black","block","boat","both","bowl","branch","bread","break","bright","bring","broom","brush","bug","but","button","came","camp","can","cast","catch","cereal","chain","chase","cheese","chick","child","chin","chop","chore","clean","clip","clock","close","coat","coin","come","complete","cool","correct","could","couple","crab","crayon","crib","crumb","cry","cub","cut","cute","dad","date","day","delicious","desk","different","dirty","done","dump","each","eachother","eat","enough","every","fame","fast","favorite","favourite","feed","feet","felt","few","fifth","find","fine","finish","first","fish","fist","fix","flag","flip","float","flock","flow","flute","food","foolish","for","fourth","free","fresh","frog","from","front","fun","game","gate","gave","get","give","glad","glue","good","got","grab","grant","grass","great","guess","hate","have","hen","high","hit","hog","holiday","home","hook","hop","hot","hour","how","ice","instead","into","jog","joke","jump","june","just","keep","kind","kiss","know","lake","lamp","last","late","leaf","learn","leave","leaves","legbeg","less","let","light","like","line","list","live","log","long","lost","lot","made","mail","make","man","many","map","match","meet","men","might","mind","minute","miss","money","month","moon","most","much","mule","nap","need","next","nice","night","nose","note","nut","off","once","one","only","other","out","over","own","paint","park","past","peck","people","perimeter","pick","pin","pine","play","please","pond","pool","pop","present","put","quiet","rain","ramp","reach","read","reel","ride","rip","river","road","rock","room","row","rude","rug","run","sack","sad","safe","said","sail","sand","saw","says","school","scrap","scrub","second","see","shake","shall","share","shine","ship","shoe","shop","should","shout","sink","sit","slam","sled","sleep","slice","slide","slip","slow","snack","snake","snap","soft","some","soon","soup","speak","special","spider","spill","spin","splash","split","spoke","spoon","sport","spot","spy","stack","stand","stare","start","stay","stick","sticky","sting","store","strike","string","such","suddenly","surely","sweep","swept","table","take","talk","tap","teach","team","teeth","thank","that","their","then","they","thin","thing","think","third","those","threw","throw","tight","toad","today","together","tomorrow","too","took","top","trap","trip","true","try","tug","tune","twice","under","use","vote","wait","walk","want","warm","was","water","way","week","weekdays","weekend","well","were","whale","what","wheel","when","where","which","while","whip","who","whole","why","wife","will","win","wing","wish","with","without","woke","word","would","year","yesterday","yogurt","your","zip","zoo"]
+    var len = words.length -1;
+    result = [];
+
+    var i =0;
+
+while (i < 25){
+    var idx = Math.floor((Math.random()*len) + 1 );
+    word = words[idx];
+    if(result.indexOf( word > -1)){
+        result.push(word);
+        i++;
+    }
+}
+
+var list = document.createElement('ul');
+for (var i =0; i<result.length; i++){
+    var item = document.createElement('li');
+    item.appendChild(document.createTextNode(result[i]));
+    list.appendChild(item);
+}
+
+document.getElementById("list").appendChild(list);
+    
+    </script>
+
+</body>
+</html>
