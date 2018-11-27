@@ -1,0 +1,6 @@
+.list-group-item {
+    display: list-item;
+}
+.list-group {
+    list-style: decimal inside;
+}
