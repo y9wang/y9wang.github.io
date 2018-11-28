@@ -21,9 +21,16 @@
 
 <body>
     <div id="buttons">
-        <button type="button" onclick="doWork('vocab')">Vocab</button>
-        <button type="button" onclick="doWork('spelling')">Spelling</button>
-        Number of items: <input type="number" id="amount" value=30><br>
+        <button type="button" class="btn btn-primary" onclick="doWork('vocab')">Vocabulary</button>
+        <button type="button" class="btn btn-primary" onclick="doWork('spelling')">Spelling</button>
+
+
+        <div class="form-group">
+            <label for="usr">Number of Entries:</label>
+            <input type="text" class="form-control" id="amount" value=30 >
+          </div>
+
+        <!-- Number of Entries: <input type="number" id="amount" value=30><br> -->
 
         <p id="label"></p>
 
