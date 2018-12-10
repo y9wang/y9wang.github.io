@@ -125,6 +125,7 @@ get
 girl
 give
 glue
+goes
 good
 got
 grab
@@ -197,6 +198,8 @@ my
 nap
 need
 needneeds
+new
+next
 nice
 night
 nose
@@ -207,6 +210,7 @@ off
 once
 one 
 other
+our
 out
 over
 own
@@ -353,6 +357,7 @@ turn
 under
 unhook
 use
+very
 vote
 wait
 walk
